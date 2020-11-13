@@ -1,0 +1,219 @@
+
+body, html{height:100%;}
+
+
+body
+{
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_texte
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 100px;
+    height: 50px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav a
+{
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    
+}
+
+.section_intro
+{
+    padding-top: 10px;
+}
+
+section#hebergement
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 60%;
+    float:left;
+
+}
+
+section#LPP
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+    float: right;
+}
+
+section#marseille
+{
+    background-color: #ffffff;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    width: 100%;
+    float:left;
+
+}
+
+.titre_marseille, .titre_LPP, .titre_marseille2
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduction
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.introduction_2
+{
+    font-size: 1em;
+}
+
+#img_hebergement 
+{
+    display: flex;
+
+
+}
+
+#img_hebergement2 
+{
+    display: flex;
+
+
+}
+
+#img_LPP
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#img_1, #img_2, #img_3, #img_4, #img_5, #img_6
+{
+    margin: 5px 15px 15px 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+#img_7, #img_8, #img_9
+{
+    margin: 5px 5px 15px 5px;
+    border-radius: 10px;
+    width: 150px;
+    height: 110px;
+}
+
+footer
+{
+    color: #333;
+}
+
+.contenu_footer {
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 20px 0 50px;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.bloc_footer_propos,
+.bloc_footer_hebergements,
+.bloc_footer_assistance 
+{
+    width: 100%;
+    margin: 0 50px;
+}
+
+.bloc_footer_propos h3,
+.bloc_footer_hebergements h3,
+.bloc_footer_assistance h3
+{
+    font-size: 20px;
+}
+
+.liste_1,
+.liste_2,
+.liste_3
+{
+    font-size: 18px;
+    list-style-type: none;
+    display: inline;
+}
+
