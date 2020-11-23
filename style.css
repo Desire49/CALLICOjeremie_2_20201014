@@ -59,6 +59,7 @@ header h1
     font-weight: normal;
     margin: 0 0 0 10px;
 }
+
 /* Navigation */
 
 nav ul
@@ -144,6 +145,8 @@ section#marseille
 #img_hebergement 
 {
     display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px 20px 10px;
 
 
 }
@@ -151,8 +154,8 @@ section#marseille
 #img_hebergement2 
 {
     display: flex;
-
-
+    flex-wrap: wrap;
+    margin: 10px 20px 20px 10px;
 }
 
 #img_LPP
@@ -161,21 +164,7 @@ section#marseille
     flex-direction: column;
 }
 
-#img_1, #img_2, #img_3, #img_4, #img_5, #img_6
-{
-    margin: 5px 15px 15px 10px;
-    border-radius: 10px;
-    width: 200px;
-    height: 150px;
-}
-
-#img_7, #img_8, #img_9
-{
-    margin: 5px 5px 15px 5px;
-    border-radius: 10px;
-    width: 150px;
-    height: 110px;
-}
+/* footer */
 
 footer
 {
@@ -217,3 +206,30 @@ footer
     display: inline;
 }
 
+
+/* interieur image plus max whidth */
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+}
+
+figcaption {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font: smaller sans-serif;
+    padding: 10px;
+    text-align: left;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
