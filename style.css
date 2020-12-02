@@ -120,8 +120,11 @@ section#marseille
     padding-right: 2%;
     padding-top: 5%;
     padding-bottom: 2%;
-    width: 50%;
+    width: 100%;
     float:left;
+    display: flex;
+    flex-wrap: wrap;
+
 
 }
 
@@ -311,4 +314,15 @@ footer
     font-size: 18px;
     list-style-type: none;
     display: inline;
+}
+
+#navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin-right: 50px;
 }
