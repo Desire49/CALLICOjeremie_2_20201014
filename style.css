@@ -480,6 +480,27 @@ footer
     }
     .figcaption_2{
         width: 150px;
+    }                                                                                                
+    .img_3{
+        width: 350px;
+        height: 224px;
+    }
+    .titre_marseille{
+        padding-left: 15px;
+    }
+    aside#LPP{
+        float: none;
+    }
+    #img_activité{
+        margin: 0px 0px 0px 0px;
+    }
+    .figure_3{
+        margin-left: 20px;
+    }
+    section#marseille{
+        padding-left: 0px;
+    }
+    .titre_LPP{
+        margin-left: 0px;
     }
   }
-  
