@@ -70,7 +70,7 @@ nav ul
 
 .a_Hébergement, .a_Activités, .a_inscrire{
     margin-right: 50px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
@@ -95,16 +95,6 @@ nav ul
     border-bottom-right-radius: 30px 30px;
     margin-right: 30px;
     padding-right: 10px;
-}
-
-@media screen and (max-width: 800px) {
-
-    .a_Hébergement, .a_Activités{
-        display: none;
-    }
-    .a_inscrire{
-        margin-right: 0px;
-    } 
 }
 
 a strong {
@@ -193,7 +183,7 @@ aside#LPP
     padding: 30px 30px 60px 30px;
     width: 30%;
     float: right;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 section#marseille
@@ -282,7 +272,7 @@ section#marseille
 }
 
 .img_1 {
-    max-width: 220px;
+    width: 280px;
     max-height: 150px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
@@ -364,14 +354,14 @@ footer
 }
 
 .contenu_footer {
-    margin: 0 0 0 0;
+    margin-left: -5%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     font-size: 20px;
     padding: 20px 0 50px;
     background-color: #F2F2F2;
-    width: 100%;
+    width: 110%;
 }
 
 .bloc_footer_propos,
@@ -463,7 +453,9 @@ footer
         padding-right: 17px;
     }
     section#hebergement{
-        padding-left: 15px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
     }
     .figure_2{
         padding: 0px;
@@ -471,6 +463,8 @@ footer
     }
     aside#LPP{
         width: 90%;
+        float: none;
+        margin-bottom: auto;
     }
     .img_2{
         max-width: 140px;
@@ -481,15 +475,14 @@ footer
     .figcaption_2{
         width: 150px;
     }                                                                                                
-    .img_3{
-        width: 350px;
-        height: 224px;
+    .img_3, .img_4{
+        width: 340px;
+        height: 180px;
     }
     .titre_marseille{
-        padding-left: 15px;
-    }
-    aside#LPP{
-        float: none;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 10px;
     }
     #img_activité{
         margin: 0px 0px 0px 0px;
@@ -503,4 +496,35 @@ footer
     .titre_LPP{
         margin-left: 0px;
     }
+    .img_1{
+        width: 320px;
+        height: 140px;
+    }
+    .ensemble{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .a_Hébergement, .a_Activités{
+        position: absolute;
+        left: 0px;
+        top: 80px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        border-bottom: #0065FC solid 2px;
+        
+    }
+    .a_Activités{
+        left: 183px;
+        padding-right: 85px;
+        padding-left: 50px;
+        border-bottom: #F2F2F2 solid 2px;
+    }
+    .a_inscrire{
+        margin-right: 0px;
+    }
+    header{
+        margin-bottom: 55px;
+    } 
   }
+  
