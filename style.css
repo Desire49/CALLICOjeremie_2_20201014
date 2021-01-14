@@ -4,9 +4,8 @@ body, html{height:100%;}
 
 body
 {
-    margin-left: 0%;
-    margin-right: 0%;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    font-family: "Raleway", "Sans serif";
     color: #181818;
 }
 
@@ -26,39 +25,47 @@ section h1, footer h1, nav a
 
 /* Header */
 
-header
-{
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .header {
+    display: grid;
+    align-items: center;
+
+  }
+  .headerImg {
+    grid-area: logo;
+    height: 2.813rem;
+  }
+  .headerNav {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#titre_principal
-{
+    align-items: center;
+    grid-area: navbar;
+  }
+  .headerNavLink {
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+  }
+  .headerNavLink[data-active=true] {
+    color: #0065FC;
+  }
+  .headerNavLink:hover {
+    color: #0065FC;
+  }
+  .headerSignup {
     display: flex;
-    flex-direction: column;
-}
-
-#logo
-{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-#logo img
-{
-    width: 100px;
-    height: 50px;
-}
-
-header h1
-{
-    font-family: 'BallparkWeiner', serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    margin: 0 0 0 10px;
-}
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+  }
 
 /* Navigation */
 
@@ -66,6 +73,7 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .a_Hébergement, .a_Activités, .a_inscrire{
@@ -113,6 +121,16 @@ nav a{
     padding-top: 10px;
 }
 
+#navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin-right: 50px;
+}
 /*barre de recherche*/
 
 label {
@@ -183,7 +201,6 @@ aside#LPP
     padding: 30px 30px 60px 30px;
     width: 30%;
     float: right;
-    margin-bottom: 100px;
 }
 
 section#marseille
@@ -196,6 +213,7 @@ section#marseille
     float:left;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -203,6 +221,7 @@ section#marseille
 {
     font-size: 1.2em;
     font-weight: bold;
+    width: 100%;
 }
 
 
@@ -240,13 +259,13 @@ section#marseille
     margin: 10px 20px 20px 10px;
 }
 
-/* interieur image plus max whidth */
+/* image */
 
 .figure_1 {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    margin-right: 40px;
+    margin-right: 20px;
     margin-left: 0px;
 }
 
@@ -276,14 +295,17 @@ section#marseille
     max-height: 150px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 .img_2 {
-    max-width: 190px;
+    width: 235px;
     max-height: 145px;
     border-top-left-radius: 20px 20px;
     border-bottom-left-radius: 20px 20px;
     min-width: 190px;
+    object-fit: cover;
 }
 
 .img_3 {
@@ -291,6 +313,8 @@ section#marseille
     height: 500px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 .img_4 {
@@ -298,6 +322,8 @@ section#marseille
     height: 224px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 .figcaption_1 {
@@ -308,6 +334,7 @@ section#marseille
     text-align: left;
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 .figcaption_2 {
@@ -327,7 +354,7 @@ section#marseille
     text-align: left;
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 .fas.fa-star.b, .fas.fa-info-circle.b {
@@ -388,15 +415,30 @@ footer
     display: inline;
 }
 
-#navbar
-{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
-    margin-right: 50px;
+.animation_css:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 1400px){
+    section#hebergement {
+        padding-right: 0px;
+        width: 50%;
+    }
+    aside#LPP{
+        width: 40%;
+    }
+}
+@media (max-width: 1050px){
+    section#hebergement {
+        padding-right: 0px;
+        width: 42%;
+    }
+    aside#LPP{
+        width: 42%;
+    }
+    .figure_2{
+        width: 300px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -457,6 +499,10 @@ footer
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
+    .figure_1{
+        padding: 15px;
+
+    }
     .figure_2{
         padding: 0px;
         margin-left: 0px;
@@ -465,6 +511,7 @@ footer
         width: 90%;
         float: none;
         margin-bottom: auto;
+        border-radius: 0px;
     }
     .img_2{
         max-width: 140px;
@@ -504,27 +551,47 @@ footer
         display: flex;
         flex-direction: column-reverse;
     }
-    .a_Hébergement, .a_Activités{
-        position: absolute;
-        left: 0px;
-        top: 80px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 10px;
-        border-bottom: #0065FC solid 2px;
-        
+    .headerImg{
+        padding: 0 2rem;
     }
-    .a_Activités{
-        left: 183px;
-        padding-right: 85px;
-        padding-left: 50px;
-        border-bottom: #F2F2F2 solid 2px;
-    }
-    .a_inscrire{
-        margin-right: 0px;
-    }
-    header{
-        margin-bottom: 55px;
-    } 
   }
-  
+
+  @media screen and (min-width: 601px) {
+    .header {
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo . navbar button";
+    }
+    .headerNavLink[data-active=true] {
+        border-top: 3px solid #0065FC;
+    }
+    .headerNavLink:hover {
+        border-top: 3px solid #0065FC;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    .headerimg {
+        padding: 0 2rem;  
+        order: 0;
+    }
+    .headerSignup {
+        order: 1;
+    }
+    .headerNav {
+        order: 2;
+    }
+    .headerNavLink {
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+    }
+    .headerNavLink[data-active=true] {
+        border-bottom-color: #0065FC;
+    }
+    .headerNavLink:hover {
+        border-bottom-color: #0065FC;
+    }
+  }
